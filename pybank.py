@@ -2,10 +2,9 @@ import csv
 import os
 import sys
 import getopt
-
-print ("Number of arguments: "+ str(len(sys.argv)) +" arguments.")
-print ("Argument List: " + str(sys.argv))
-print (" remainders : " + str(sys.argv[1]))
+if len(sys.argv) == 1:
+    print("enter the number of files you want to process as argument when calling the program")
+    sys.exit()
 NumOfFiles = int(sys.argv[1])
 months_revenue=[]
 for i in range(1,(NumOfFiles+1)):
