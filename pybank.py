@@ -2,7 +2,6 @@ import csv
 import os
 import sys
 import getopt
-import re
 
 print ("Number of arguments: "+ str(len(sys.argv)) +" arguments.")
 print ("Argument List: " + str(sys.argv))
