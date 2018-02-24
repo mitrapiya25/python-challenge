@@ -4,11 +4,14 @@ import sys
 import getopt
 import re
 import operator
-NumOfFiles = int(sys.argv[1])
+if len(sys.argv) ==1:
+    print("give the following arguments 1. File Prefix to process 2. number of files to process")
+    sys.exit()
+NumOfFiles = int(sys.argv[2])
 Poll=[]
-
+Filprefix = sys.argv[1]
 for i in range(1,(NumOfFiles+1)):
-    inputfile = "election_data_" + str(i) +".csv"
+    inputfile = Filprefix + str(i) +".csv"
     print("Input " + inputfile)
     input_path = os.path.join("Homework",inputfile)
     with open(input_path,newline='',encoding="utf8") as csvinpfile:
