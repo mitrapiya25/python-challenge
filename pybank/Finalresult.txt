@@ -1,0 +1,4 @@
+Total Month included in the dataset is 127
+Average Monthly Revenue Change 3444.7952755905512Total revenue generated over the period is 55945323
+ Greatest Increase in Revenue  :Feb-16(1837235)
+ Greatest Decrease in Revenue  :Jun-2014(-1947745)
